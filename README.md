@@ -2,7 +2,7 @@
 This is a quick way to get a RS256 signed JWT for use with Salesforce in Postman. As far as I know and can see Postman doesn't support signinng a JWT with a private RSA key. This repo is an app that can be called from a Postman to create a signed JWT.
 
 ## Configuration
-Create an environment variable called `SHARED_SECRET` with a preshared key.
+Create an environment variable called `SHARED_SECRET` with a preshared key. Unless an environment variable called `PORT` is defined the app will listen on port 3000.
 
 ## Authentication
 Simple authentication is performed by sending the configured `SHARED_SECRET` as a Bearer token in the `Authorization` header.
